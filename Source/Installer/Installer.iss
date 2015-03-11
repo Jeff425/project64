@@ -93,10 +93,3 @@ begin
     LoopVar := LoopVar + 1;
   end;
 end;
-
-procedure InitializeWizard();
-begin  
-  if ((WizardSilent() <> true) and (HaveCommandlineParam('noads') <> true)) then begin
-	  CreateBINNOPage(wpSelectTasks,'pj64emu','pj64emu');
-  end;
-end;
